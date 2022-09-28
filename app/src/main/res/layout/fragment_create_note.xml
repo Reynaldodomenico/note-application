@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.CreateNoteFragment"
+        android:background="@color/lightBlack">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_template"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:hint="Title..."
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_template"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:hint="Subtitle..."
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/greenCircle"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/green_circle" />
+
+                <ImageView
+                    android:id="@+id/yellowCircle"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/yellow_circle" />
+
+                <ImageView
+                    android:id="@+id/redCircle"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/red_circle" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/edit_text_template"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:hint="Note..."
+                android:gravity="start" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnCreateSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_baseline_check_24"
+            android:backgroundTint="@color/green" />
+
+    </FrameLayout>
+</layout>
