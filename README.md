@@ -1,5 +1,6 @@
 # note-application
 a application for taking important notes and adding picture on it that you can change anytime you want and organized it by importance level
+
 ![image](https://user-images.githubusercontent.com/104771549/192796395-b5c174d1-ed55-4b97-a04d-8015ec14d9e8.png)
 
 ![image](https://user-images.githubusercontent.com/104771549/192796432-e4c2de08-e7e4-4716-a3c4-c2ae64172827.png)
